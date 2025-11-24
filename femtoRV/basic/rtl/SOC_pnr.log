@@ -1,0 +1,358 @@
+Info: constraining clock net 'clk' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      3414/24288    14%
+Info:         logic LUTs:   2932/24288    12%
+Info:         carry LUTs:    290/24288     1%
+Info:           RAM LUTs:    128/ 3036     4%
+Info:          RAMW LUTs:     64/ 6072     1%
+
+Info:      Total DFFs:       890/24288     3%
+
+Info: Packing IOs..
+Info: pin 'resetn$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'clk$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: pin 'TXD$tr_io' constrained to Bel 'X11/Y0/PIOA'.
+Info: pin 'RXD$tr_io' constrained to Bel 'X9/Y0/PIOB'.
+Info: pin 'LEDS$tr_io' constrained to Bel 'X4/Y50/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     468 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info: Checksum: 0x87182bd4
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:     5/  197     2%
+Info: 	                DCCA:     1/   56     1%
+Info: 	              DP16KD:     9/   56    16%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     0/    2     0%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  128     0%
+Info: 	            SIOLOGIC:     0/   69     0%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:   890/24288     3%
+Info: 	        TRELLIS_COMB:  3488/24288    14%
+Info: 	        TRELLIS_RAMW:    32/ 3036     1%
+
+Info: Placed 5 cells based on constraints.
+Info: Creating initial analytic placement for 2228 cells, random placement wirelen = 142372.
+Info:     at initial placer iter 0, wirelen = 746
+Info:     at initial placer iter 1, wirelen = 690
+Info:     at initial placer iter 2, wirelen = 655
+Info:     at initial placer iter 3, wirelen = 742
+Info: Running main analytical placer, max placement attempts per cell = 2447578.
+Info:     at iteration #1, type ALL: wirelen solved = 629, spread = 33325, legal = 35830; time = 0.12s
+Info:     at iteration #2, type ALL: wirelen solved = 2181, spread = 24388, legal = 31683; time = 0.14s
+Info:     at iteration #3, type ALL: wirelen solved = 3178, spread = 22079, legal = 29307; time = 0.14s
+Info:     at iteration #4, type ALL: wirelen solved = 4285, spread = 20630, legal = 30178; time = 0.13s
+Info:     at iteration #5, type ALL: wirelen solved = 5233, spread = 19766, legal = 29475; time = 0.14s
+Info:     at iteration #6, type ALL: wirelen solved = 5626, spread = 19076, legal = 28597; time = 0.15s
+Info:     at iteration #7, type ALL: wirelen solved = 6381, spread = 18155, legal = 30193; time = 0.14s
+Info:     at iteration #8, type ALL: wirelen solved = 7014, spread = 17885, legal = 28737; time = 0.14s
+Info:     at iteration #9, type ALL: wirelen solved = 7861, spread = 17490, legal = 27993; time = 0.14s
+Info:     at iteration #10, type ALL: wirelen solved = 8095, spread = 17352, legal = 29851; time = 0.14s
+Info:     at iteration #11, type ALL: wirelen solved = 8453, spread = 17470, legal = 29732; time = 0.14s
+Info:     at iteration #12, type ALL: wirelen solved = 9182, spread = 17202, legal = 32793; time = 0.13s
+Info:     at iteration #13, type ALL: wirelen solved = 9408, spread = 17537, legal = 29505; time = 0.14s
+Info:     at iteration #14, type ALL: wirelen solved = 9733, spread = 17489, legal = 32159; time = 0.13s
+Info: HeAP Placer Time: 2.73s
+Info:   of which solving equations: 1.24s
+Info:   of which spreading cells: 0.17s
+Info:   of which strict legalisation: 0.73s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 1474, wirelen = 27993
+Info:   at iteration #5: temp = 0.000000, timing cost = 1400, wirelen = 22853
+Info:   at iteration #10: temp = 0.000000, timing cost = 1368, wirelen = 21473
+Info:   at iteration #15: temp = 0.000000, timing cost = 1353, wirelen = 20589
+Info:   at iteration #20: temp = 0.000000, timing cost = 1249, wirelen = 20140
+Info:   at iteration #23: temp = 0.000000, timing cost = 1393, wirelen = 20065 
+Info: SA placement time 8.11s
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 37.32 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 12.84 ns
+Info: Max delay <async>                           -> negedge $glbnet$clk$TRELLIS_IO_IN: 8.82 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 5.20 ns
+
+Info: Checksum: 0x25895434
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 13154 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      628        371 |  628   371 |     12876|       0.40       0.40|
+Info:       2000 |     1140        859 |  512   488 |     12576|       0.19       0.58|
+Info:       3000 |     1546       1453 |  406   594 |     12138|       0.17       0.75|
+Info:       4000 |     1964       2035 |  418   582 |     11835|       0.17       0.92|
+Info:       5000 |     2254       2745 |  290   710 |     11392|       0.17       1.09|
+Info:       6000 |     2580       3419 |  326   674 |     10950|       0.17       1.25|
+Info:       7000 |     2949       4050 |  369   631 |     10620|       0.17       1.42|
+Info:       8000 |     3345       4654 |  396   604 |     10330|       0.16       1.58|
+Info:       9000 |     3720       5279 |  375   625 |      9936|       0.19       1.77|
+Info:      10000 |     4112       5887 |  392   608 |      9613|       0.20       1.97|
+Info:      11000 |     4511       6488 |  399   601 |      9268|       0.23       2.20|
+Info:      12000 |     4967       7032 |  456   544 |      9000|       0.26       2.46|
+Info:      13000 |     5433       7566 |  466   534 |      8734|       0.27       2.73|
+Info:      14000 |     5859       8140 |  426   574 |      8480|       0.27       3.00|
+Info:      15000 |     6227       8772 |  368   632 |      8141|       0.30       3.30|
+Info:      16000 |     6643       9356 |  416   584 |      7866|       0.27       3.57|
+Info:      17000 |     7082       9917 |  439   561 |      7582|       0.31       3.88|
+Info:      18000 |     7532      10467 |  450   550 |      7343|       0.30       4.18|
+Info:      19000 |     8010      10989 |  478   522 |      7089|       0.43       4.61|
+Info:      20000 |     8442      11557 |  432   568 |      6877|       0.36       4.97|
+Info:      21000 |     8758      12194 |  316   637 |      6444|       0.34       5.31|
+Info:      22000 |     9088      12770 |  330   576 |      5904|       0.24       5.56|
+Info:      23000 |     9480      13283 |  392   513 |      5499|       0.37       5.93|
+Info:      24000 |     9792      13908 |  312   625 |      5131|       0.28       6.21|
+Info:      25000 |    10100      14475 |  308   567 |      4631|       0.35       6.55|
+Info:      26000 |    10480      15047 |  380   572 |      4331|       0.45       7.00|
+Info:      27000 |    10879      15615 |  399   568 |      3929|       0.37       7.38|
+Info:      28000 |    11250      16192 |  371   577 |      3515|       0.38       7.76|
+Info:      29000 |    11651      16752 |  401   560 |      3216|       0.28       8.04|
+Info:      30000 |    11991      17378 |  340   626 |      2759|       0.36       8.40|
+Info:      31000 |    12229      18125 |  238   747 |      2209|       0.34       8.74|
+Info:      32000 |    12513      18784 |  284   659 |      1617|       0.31       9.05|
+Info:      33000 |    12786      19436 |  273   652 |       993|       0.31       9.36|
+Info:      34000 |    13184      19980 |  398   544 |       761|       0.39       9.75|
+Info:      35000 |    13625      20506 |  441   526 |       645|       0.43      10.18|
+Info:      36000 |    13980      21074 |  355   568 |       267|       0.44      10.62|
+Info:      37000 |    14463      21558 |  483   484 |       176|       0.58      11.20|
+Info:      37649 |    14752      21893 |  289   335 |         0|       0.35      11.54|
+Info: Routing complete.
+Info: Router1 time 11.54s
+Info: Checksum: 0x66ddd16c
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (posedge -> negedge):
+Info: curr total
+Info:  0.5  0.5  Source CPU.instr_TRELLIS_FF_Q_10.Q
+Info:  1.2  1.7    Net CPU.Iimm[1] (19,14) -> (14,14)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_3_B0_LUT4_Z_3.C
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  1.9  Source CPU.loadstore_addr_CCU2C_S0_3_B0_LUT4_Z_3.F
+Info:  1.2  3.1    Net CPU.loadstore_addr_CCU2C_S0_3_B0[1] (14,14) -> (14,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_11$CCU2_COMB1.B
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:32.22-32.23
+Info:  0.4  3.6  Source CPU.loadstore_addr_CCU2C_S0_11$CCU2_COMB1.FCO
+Info:  0.0  3.6    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[1] (14,11) -> (14,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_3$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  3.6  Source CPU.loadstore_addr_CCU2C_S0_3$CCU2_COMB0.FCO
+Info:  0.0  3.6    Net CPU.loadstore_addr_CCU2C_S0_3$CCU2_FCI_INT (14,11) -> (14,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_3$CCU2_COMB1.FCI
+Info:  0.0  3.6  Source CPU.loadstore_addr_CCU2C_S0_3$CCU2_COMB1.FCO
+Info:  0.0  3.6    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[3] (14,11) -> (14,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_2$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  3.7  Source CPU.loadstore_addr_CCU2C_S0_2$CCU2_COMB0.FCO
+Info:  0.0  3.7    Net CPU.loadstore_addr_CCU2C_S0_2$CCU2_FCI_INT (14,11) -> (14,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_2$CCU2_COMB1.FCI
+Info:  0.0  3.7  Source CPU.loadstore_addr_CCU2C_S0_2$CCU2_COMB1.FCO
+Info:  0.0  3.7    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[5] (14,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_1$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  3.8  Source CPU.loadstore_addr_CCU2C_S0_1$CCU2_COMB0.FCO
+Info:  0.0  3.8    Net CPU.loadstore_addr_CCU2C_S0_1$CCU2_FCI_INT (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_1$CCU2_COMB1.FCI
+Info:  0.0  3.8  Source CPU.loadstore_addr_CCU2C_S0_1$CCU2_COMB1.FCO
+Info:  0.0  3.8    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[7] (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  3.8  Source CPU.loadstore_addr_CCU2C_S0$CCU2_COMB0.FCO
+Info:  0.0  3.8    Net CPU.loadstore_addr_CCU2C_S0$CCU2_FCI_INT (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0$CCU2_COMB1.FCI
+Info:  0.0  3.8  Source CPU.loadstore_addr_CCU2C_S0$CCU2_COMB1.FCO
+Info:  0.0  3.8    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[9] (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_10$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  3.9  Source CPU.loadstore_addr_CCU2C_S0_10$CCU2_COMB0.FCO
+Info:  0.0  3.9    Net CPU.loadstore_addr_CCU2C_S0_10$CCU2_FCI_INT (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_10$CCU2_COMB1.FCI
+Info:  0.0  3.9  Source CPU.loadstore_addr_CCU2C_S0_10$CCU2_COMB1.FCO
+Info:  0.0  3.9    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[11] (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_9$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  4.0  Source CPU.loadstore_addr_CCU2C_S0_9$CCU2_COMB0.FCO
+Info:  0.0  4.0    Net CPU.loadstore_addr_CCU2C_S0_9$CCU2_FCI_INT (15,11) -> (15,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_9$CCU2_COMB1.FCI
+Info:  0.0  4.0  Source CPU.loadstore_addr_CCU2C_S0_9$CCU2_COMB1.FCO
+Info:  0.0  4.0    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[13] (15,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_8$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  4.1  Source CPU.loadstore_addr_CCU2C_S0_8$CCU2_COMB0.FCO
+Info:  0.0  4.1    Net CPU.loadstore_addr_CCU2C_S0_8$CCU2_FCI_INT (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_8$CCU2_COMB1.FCI
+Info:  0.0  4.1  Source CPU.loadstore_addr_CCU2C_S0_8$CCU2_COMB1.FCO
+Info:  0.0  4.1    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[15] (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_7$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  4.1  Source CPU.loadstore_addr_CCU2C_S0_7$CCU2_COMB0.FCO
+Info:  0.0  4.1    Net CPU.loadstore_addr_CCU2C_S0_7$CCU2_FCI_INT (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_7$CCU2_COMB1.FCI
+Info:  0.0  4.1  Source CPU.loadstore_addr_CCU2C_S0_7$CCU2_COMB1.FCO
+Info:  0.0  4.1    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[17] (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_6$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  4.2  Source CPU.loadstore_addr_CCU2C_S0_6$CCU2_COMB0.FCO
+Info:  0.0  4.2    Net CPU.loadstore_addr_CCU2C_S0_6$CCU2_FCI_INT (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_6$CCU2_COMB1.FCI
+Info:  0.0  4.2  Source CPU.loadstore_addr_CCU2C_S0_6$CCU2_COMB1.FCO
+Info:  0.0  4.2    Net CPU.loadstore_addr_CCU2C_S0_4_COUT[19] (16,11) -> (16,11)
+Info:                Sink CPU.loadstore_addr_CCU2C_S0_5$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.53-124.62
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.4  4.6  Source CPU.loadstore_addr_CCU2C_S0_5$CCU2_COMB0.F
+Info:  1.4  6.1    Net CPU.loadstore_addr[20] (16,11) -> (9,10)
+Info:                Sink CPU.loadstore_addr_LUT4_B.B
+Info:                Defined in:
+Info:                  SOC.v:15.14-25.5
+Info:                  cores/cpu/femtorv32_quark_V2.v:123.36-123.50
+Info:  0.4  6.5  Source CPU.loadstore_addr_LUT4_B.OFX
+Info:  0.0  6.5    Net CPU.state_PFUMX_C0_Z (9,10) -> (9,10)
+Info:                Sink CPU.state_PFUMX_C0_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2  6.7  Source CPU.state_PFUMX_C0_ALUT_LUT4_Z.OFX
+Info:  0.5  7.2    Net CPU.PC_LUT4_B_Z[1] (9,10) -> (8,10)
+Info:                Sink div1.s_LUT4_Z_B_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.4  Source div1.s_LUT4_Z_B_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  7.4    Net div1.s_LUT4_Z_B_PFUMX_Z_ALUT (8,10) -> (8,10)
+Info:                Sink div1.s_LUT4_Z_B_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:133.22-133.24
+Info:  0.2  7.6  Source div1.s_LUT4_Z_B_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.6  8.2    Net div1.s_LUT4_Z_B[2] (8,10) -> (6,10)
+Info:                Sink div1.d_out_TRELLIS_FF_Q_LSR_LUT4_Z_A_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  8.5  Source div1.d_out_TRELLIS_FF_Q_LSR_LUT4_Z_A_LUT4_Z_1.F
+Info:  0.5  8.9    Net div1.d_out_TRELLIS_FF_Q_CE[0] (6,10) -> (6,10)
+Info:                Sink div1.d_out_TRELLIS_FF_Q_LSR_LUT4_Z_A_LUT4_C.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  9.2  Source div1.d_out_TRELLIS_FF_Q_LSR_LUT4_Z_A_LUT4_C.F
+Info:  0.7  9.9    Net div1.d_out_TRELLIS_FF_Q_CE[3] (6,10) -> (6,9)
+Info:                Sink div1.d_out_TRELLIS_FF_Q_7_LSR_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 10.1  Source div1.d_out_TRELLIS_FF_Q_7_LSR_LUT4_Z.F
+Info:  0.9 11.0    Net div1.d_out_TRELLIS_FF_Q_7_LSR (6,9) -> (10,9)
+Info:                Sink div1.d_out_TRELLIS_FF_Q_7.LSR
+Info:  0.4 11.4  Setup div1.d_out_TRELLIS_FF_Q_7.LSR
+Info: 4.5 ns logic, 7.0 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.0  0.0  Source resetn$tr_io.O
+Info:  3.5  3.5    Net resetn$TRELLIS_IO_IN (6,50) -> (16,16)
+Info:                Sink CPU.state_TRELLIS_FF_Q_2_CE_LUT4_D_B_LUT4_Z_D_LUT4_D_Z_LUT4_Z_C_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.8  Source CPU.state_TRELLIS_FF_Q_2_CE_LUT4_D_B_LUT4_Z_D_LUT4_D_Z_LUT4_Z_C_LUT4_Z_1.F
+Info:  0.6  4.4    Net CPU.state_TRELLIS_FF_Q_2_CE_LUT4_D_B_LUT4_Z_D_LUT4_D_Z_LUT4_Z_C[3] (16,16) -> (16,16)
+Info:                Sink CPU.state_TRELLIS_FF_Q_2_CE_LUT4_D_B_LUT4_Z_D_LUT4_D_Z_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.6  Source CPU.state_TRELLIS_FF_Q_2_CE_LUT4_D_B_LUT4_Z_D_LUT4_D_Z_LUT4_Z.F
+Info:  1.2  5.8    Net CPU.aluIn2_LUT4_Z_20_D_LUT4_C_Z_LUT4_A_Z[4] (16,16) -> (14,14)
+Info:                Sink CPU.registerFile.0.0_WRE_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  6.0  Source CPU.registerFile.0.0_WRE_LUT4_Z_1.F
+Info:  2.2  8.2    Net CPU.registerFile.0.0_WRE[0] (14,14) -> (18,7)
+Info:                Sink CPU.registerFile.1.2$DPRAM_COMB3.WRE
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/techmap.v:614.34-614.35
+Info:  0.4  8.6  Setup CPU.registerFile.1.2$DPRAM_COMB3.WRE
+Info: 1.1 ns logic, 7.5 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'negedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.0  0.0  Source resetn$tr_io.O
+Info:  4.5  4.5    Net resetn$TRELLIS_IO_IN (6,50) -> (14,15)
+Info:                Sink sqrt1.A_TRELLIS_FF_Q_8_LSR_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/chema/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.8  Source sqrt1.A_TRELLIS_FF_Q_8_LSR_LUT4_Z.F
+Info:  0.6  5.3    Net sqrt1.A_TRELLIS_FF_Q_8_LSR (14,15) -> (15,15)
+Info:                Sink sqrt1.A_TRELLIS_FF_Q_8.LSR
+Info:  0.4  5.8  Setup sqrt1.A_TRELLIS_FF_Q_8.LSR
+Info: 0.7 ns logic, 5.1 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source LEDS_TRELLIS_FF_Q.Q
+Info:  2.7  3.2    Net LEDS$TRELLIS_IO_OUT (4,19) -> (4,50)
+Info:                Sink LEDS$tr_io.I
+Info:                Defined in:
+Info:                  SOC.v:51.6-63.5
+Info:                  cores/uart/perip_uart.v:21.11-21.20
+Info: 0.5 ns logic, 2.7 ns routing
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 43.67 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 8.61 ns
+Info: Max delay <async>                           -> negedge $glbnet$clk$TRELLIS_IO_IN: 5.75 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 3.22 ns
+
+Info: Program finished normally.
